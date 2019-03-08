@@ -205,5 +205,37 @@ public class PersonaControllers {
         
         return "persona_editar";
         
-    }    
+    }  
+    /*
+    @RequestMapping(method = RequestMethod.GET, value = "personaEliminar.htm")
+    public String processSubmit8(HttpServletRequest req, SessionStatus status,ModelMap model) 
+    {      
+        Logger.getLogger(PersonaControllers.class.getName()).log(Level.INFO, "Ejecutando processSubmit2...");
+        return "persona_eliminar";
+    }
+    
+    @RequestMapping(method = RequestMethod.DELETE, value = "personaEliminarForm.htm")
+    public String processSubmit7(HttpServletRequest req, SessionStatus status,ModelMap model) 
+    {
+
+        PersonaDAO pDao = new PersonaDAO();
+            
+        Logger.getLogger(PersonaDAO.class.getName()).log(Level.INFO, "Ejecutando processSubmit3...");
+
+        int id = pDao.obtenerId(MySqlDataSource.getConexionBD());
+        String ident = req.getParameter("identificacion");
+        String nombre1 = req.getParameter("nombre1");
+        
+        Persona p = new Persona();
+        p.setId(id);
+        p.setIdentificacion(ident);
+        p.setNombre1(nombre1);
+            
+        List<Persona> datos = pDao.consultarPersona(p, MySqlDataSource.getConexionBD());
+
+        Logger.getLogger(PersonaControllers.class.getName()).log(Level.SEVERE, null, "Eliminar + " + ident + "-" + datos.size());
+        
+              
+        return "persona_eliminar";
+    }*/
 }

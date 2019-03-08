@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Editar</title>
+<title>Eliminar</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="VehiAlpes Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -121,29 +121,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</form>
 				</div>				
 			</div>                    
-			<div class="signin-form profile">
-				<h3>:: Editar ::</h3>
-				
-				<div class="login-form">
-					<form action="personaEditarForm2.htm" method="post">
-                                            <input type="text" name="identificacion" placeholder="Identificación" value="${listaPersonas.get(0).getIdentificacion()}" >
-                                            <input type="text" name="nombre1" placeholder="Nombre 1" value="${listaPersonas.get(0).getNombre1()}" >
-                                            <input type="text" name="nombre2" placeholder="Nombre 2" value="${listaPersonas.get(0).getNombre2()}" >
-                                            <input type="text" name="apellido1" placeholder="Apellido 1" value="${listaPersonas.get(0).getApellido1()}" >
-                                            <input type="text" name="apellido2" placeholder="Apellido 2" value="${listaPersonas.get(0).getApellido2()}" >
-                                            <input type="text" name="genero" placeholder="Genero" value="${listaPersonas.get(0).getGenero()}" >
-                                            <input type="text" name="tipop" placeholder="Tipo Persona" value="${listaPersonas.get(0).getTipoP()}" >
-                                            <input type="date" name="fecha" placeholder="Fecha Nacimiento" value="${listaPersonas.get(0).getfNacimiento()}" >
-                                            <input type="text" name="telefono" placeholder="Telefono" value="${listaPersonas.get(0).getTelef()}" >
-                                            <input type="email" name="email" placeholder="E-mail" value="${listaPersonas.get(0).getEmail()}" >
-
-                                            <input type="hidden" name="id" value="${listaPersonas.get(0).getId()}">
-                                            
-                                            <input type="submit" value="EDITAR">
-					</form>
-				</div>
-				<p>${mensaje}</p>
-			</div>
+			<div class="table-responsive">                                                               
+                            <table id="tablaResultado" class="table table-striped table-hover table-bordered" >
+                                <thead>       
+                                    <tr>
+                                       <th>Identificación</th>
+                                       <th>Nombre 1</th>
+                                       <th>Nombre 2</th>
+                                       <th>Apellido 1</th>
+                                       <th>Apellido 2</th>
+                                       <th>Genero</th>
+                                       <th>Telefono</th>
+                                       <th>E-mail</th>
+                                       <th>Fecha Nacimiento</th>
+                                       <th>Tipo Persona</th>
+                                    </tr>
+                                </thead>                                        
+                                <tbody>
+                                <c:forEach var="p" items="${listaPersonas}">                                           
+                                    <tr>
+                                        <td>${p.getIdentificacion()}</td>
+                                        <td>${p.getNombre1()}</td>
+                                        <td>${p.getNombre2()}</td>
+                                        <td>${p.getApellido1()}</td>
+                                        <td>${p.getApellido2()}</td>
+                                        <td>${p.getGenero()}</td>
+                                        <td>${p.getTipoP()}</td>
+                                        <td>${p.getfNacimiento()}</td>
+                                        <td>${p.getTelef()}</td>
+                                        <td>${p.getEmail()}</td>                                        
+                                    </tr>
+                                </c:forEach>
+                                </tbody>
+                            </table>
+                        </div>                  
 		</div>
 	</div>
 	<!-- footer -->

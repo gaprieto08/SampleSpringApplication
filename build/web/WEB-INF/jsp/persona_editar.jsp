@@ -11,7 +11,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>Editar</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Hosting City Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+<meta name="keywords" content="VehiAlpes Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- bootstrap-css -->
@@ -126,16 +126,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				
 				<div class="login-form">
 					<form action="personaEditarForm2.htm" method="post">
-                                            <input type="text" name="identificacion" value="${listaPersonas.get(0).getIdentificacion()}" >
-                                            <input type="text" name="nombre1" value="${listaPersonas.get(0).getNombre1()}" >
-                                            <input type="text" name="nombre2" value="${listaPersonas.get(0).getNombre2()}" >
-                                            <input type="text" name="apellido1" value="${listaPersonas.get(0).getApellido1()}" >
-                                            <input type="text" name="apellido2" value="${listaPersonas.get(0).getApellido2()}" >
-                                            <input type="text" name="genero" value="${listaPersonas.get(0).getGenero()}" >
-                                            <input type="text" name="tipop" value="${listaPersonas.get(0).getTipoP()}" >
-                                            <input type="date" name="fecha" value="${listaPersonas.get(0).getfNacimiento()}" >
-                                            <input type="text" name="telefono" value="${listaPersonas.get(0).getTelef()}" >
-                                            <input type="email" name="email" value="${listaPersonas.get(0).getEmail()}" >
+                                            <input type="text" name="identificacion" placeholder="Identificaci�n" value="${listaPersonas.get(0).getIdentificacion()}" >
+                                            <input type="text" name="nombre1" placeholder="Nombre 1" value="${listaPersonas.get(0).getNombre1()}" >
+                                            <input type="text" name="nombre2" placeholder="Nombre 2" value="${listaPersonas.get(0).getNombre2()}" >
+                                            <input type="text" name="apellido1" placeholder="Apellido 1" value="${listaPersonas.get(0).getApellido1()}" >
+                                            <input type="text" name="apellido2" placeholder="Apellido 2" value="${listaPersonas.get(0).getApellido2()}" >
+                                            <input type="text" name="genero" placeholder="Genero" value="${listaPersonas.get(0).getGenero()}" >
+                                            <input type="text" name="tipop" placeholder="Tipo Persona" value="${listaPersonas.get(0).getTipoP()}" >
+                                            <input type="date" name="fecha" placeholder="Fecha Nacimiento" value="${listaPersonas.get(0).getfNacimiento()}" >
+                                            <input type="text" name="telefono" placeholder="Telefono" value="${listaPersonas.get(0).getTelef()}" >
+                                            <input type="email" name="email" placeholder="E-mail" value="${listaPersonas.get(0).getEmail()}" >
 
                                             <input type="hidden" name="id" value="${listaPersonas.get(0).getId()}">
                                             
@@ -215,7 +215,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 		<div class="copyright">
-			<p>© 2016 Hosting City. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+			<p>© 2016 VehiAlpes. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
 		</div>
 	</div>
 	<!-- //footer -->
